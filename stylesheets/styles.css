@@ -216,7 +216,7 @@ Small Device Styles
 *******************************************************************************/
 
 @media screen and (max-width: 720px),
-       screen and (max-width: 800px) and (max-height: 400px) {
+       screen and (max-height: 440px) {
   body {
     font-size:14px;
   }
@@ -235,7 +235,7 @@ Small Device Styles
   }
 
   h2 {
-    font-size: 24px;
+      font-size: 24px;
   }
 
   h3 {
@@ -285,11 +285,10 @@ Small Device Styles
 
 
 @media screen and (max-width: 1000px),
-       screen and (max-height: 320px),
-       screen and (max-height: 540px) and (max-width: 1723px){
-  footer {
-    width:270px;
-    position:relative;
-  }
+       screen and (max-height: 440px) {
 
+  footer {
+    position:relative;
+    bottom:8px;
+  }
 }
