@@ -8,8 +8,8 @@
     <link rel="stylesheet" href="stylesheets/github-light.css">
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
     <!--[if lt IE 9]>
-    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
-<![endif]-->
+	<script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+	<![endif]-->
     <script src="javascripts/scale.fix.js"></script>
   </head>
   <body>
@@ -19,97 +19,93 @@
         <p>Cancer Genome Project Insertion/Deletion detection pipeline based around Pindel</p>
         <div id="downloads">
           <a class="zip_download_link"
-    href="https://github.com/cancerit/cgpPindel/zipball/master">Download as a .zip file</a>
+	     href="https://github.com/cancerit/cgpPindel/zipball/master">Download as a .zip file</a>
           <br>
           <a class="tar_download_link" href="https://github.com/cancerit/cgpPindel/tarball/master">Download as a .tar.gz file</a>
-        </section>
+	</div>
       </header>
       <section>
-        <h1>
-<a id="cgppindel" class="anchor" href="#cgppindel" aria-hidden="true"><span class="octicon octicon-link"></span></a>cgpPindel</h1>
-
-<p>cgpPindel contains the Cancer Genome Projects workflow for <a href="http://gmt.genome.wustl.edu/pindel/current/">pindel</a>.</p>
-
-<p>This is a slightly modified version of pindel v2.0 with CGP specific processing for:</p>
-
-<ul>
-<li>Input file generation</li>
-<li>Conversion from pindel text output to:
-
-<ul>
-<li>tumour and normal BAM alignment files</li>
-<li>VCF</li>
-</ul>
-</li>
-<li>Application of VCF filters.</li>
-</ul>
-
-<p>The installed <code>pindel.pl</code> script will run the complete workflow for you.  You can opt to run each element of the flow separately in a more efficient manner on a farm environment by adding only the <code>-p</code> and <code>-i</code> options.</p>
-
-<p>Please see <code>pindel -h</code> or <code>pindel.pl -m</code> for the most up-to-date usage information.</p>
-
-<hr>
-
-<h3>
-<a id="dependenciesinstall" class="anchor" href="#dependenciesinstall" aria-hidden="true"><span class="octicon octicon-link"></span></a>Dependencies/Install</h3>
-
-<p>Please install the following first:</p>
-
-<ul>
-<li><a href="http://github.com/ICGC-TCGA-PanCancer/PCAP-core/releases">PCAP-core</a></li>
-<li><a href="http://github.com/cancerit/cgpVcf/releases">cgpVcf</a></li>
-</ul>
-
-<p>Please see these for any child dependencies.</p>
-
-<p>Once complete please run:</p>
-
-<p>./setup.sh /some/install/location</p>
-
-<p>Please be aware that this expects basic C compilation libraries and tools to be available,
-most are listed in <code>INSTALL</code>.</p>
-
-<hr>
-
-<h1>
-<a id="licence" class="anchor" href="#licence" aria-hidden="true"><span class="octicon octicon-link"></span></a>LICENCE</h1>
-
-<p>Copyright (c) 2014 Genome Research Ltd.</p>
-
-<p>Author: Cancer Genome Project <a href="mailto:cgpit@sanger.ac.uk">cgpit@sanger.ac.uk</a></p>
-
-<p>This file is part of cgpPindel.</p>
-
-<p>cgpPindel is free software: you can redistribute it and/or modify it under
-the terms of the GNU Affero General Public License as published by the Free
-Software Foundation; either version 3 of the License, or (at your option) any
-later version.</p>
-
-<p>This program is distributed in the hope that it will be useful, but WITHOUT
-ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS
-FOR A PARTICULAR PURPOSE. See the GNU Affero General Public License for more
-details.</p>
-
-<p>You should have received a copy of the GNU Affero General Public License
-along with this program. If not, see <a href="http://www.gnu.org/licenses/">http://www.gnu.org/licenses/</a>.</p>
-
-<ol>
-<li>The usage of a range of years within a copyright statement contained within
-this distribution should be interpreted as being equivalent to a list of years
-including the first and last year specified and all consecutive years between
-them. For example, a copyright statement that reads ‘Copyright (c) 2005, 2007-
-2009, 2011-2012’ should be interpreted as being identical to a statement that
-reads ‘Copyright (c) 2005, 2007, 2008, 2009, 2011, 2012’ and a copyright
-statement that reads ‘Copyright (c) 2005-2012’ should be interpreted as being
-identical to a statement that reads ‘Copyright (c) 2005, 2006, 2007, 2008,
-2009, 2010, 2011, 2012’."</li>
-</ol>
+	<h1>
+	  <a id="cgppindel" class="anchor" href="#cgppindel" aria-hidden="true"></a>cgpPindel
+	</h1>
+	<p>cgpPindel contains the Cancer Genome Projects workflow for <a href="http://gmt.genome.wustl.edu/pindel/current/">pindel</a>.</p>
+	
+	<p>This is a slightly modified version of pindel v2.0 with CGP specific processing for:</p>
+	
+	<ul>
+	  <li>Input file generation</li>
+	  <li>Conversion from pindel text output to:
+	    <ul>
+	      <li>tumour and normal BAM alignment files</li>
+	      <li>VCF</li>
+	    </ul>
+	  </li>
+	  <li>Application of VCF filters.</li>
+	</ul>
+	
+	<p>The installed <code>pindel.pl</code> script will run the complete workflow for you.  You can opt to run each element of the flow separately in a more efficient manner on a farm environment by adding only the <code>-p</code> and <code>-i</code> options.</p>
+	
+	<p>Please see <code>pindel -h</code> or <code>pindel.pl -m</code> for the most up-to-date usage information.</p>
+	<hr>
+	<h3>
+	  <a id="dependenciesinstall" class="anchor" href="#dependenciesinstall" aria-hidden="true"></a>Dependencies/Install</h3>
+	<p>Please install the following first:</p>
+	
+	<ul>
+	  <li><a href="http://github.com/ICGC-TCGA-PanCancer/PCAP-core/releases">PCAP-core</a></li>
+	  <li><a href="http://github.com/cancerit/cgpVcf/releases">cgpVcf</a></li>
+	</ul>
+	
+	<p>Please see these for any child dependencies.</p>
+	
+	<p>Once complete please run:</p>
+	
+	<p>./setup.sh /some/install/location</p>
+	
+	<p>Please be aware that this expects basic C compilation libraries and tools to be available,
+	  most are listed in <code>INSTALL</code>.</p>
+	
+	<hr>
+	
+	<h1>
+	  <a id="licence" class="anchor" href="#licence" aria-hidden="true"><span class="octicon octicon-link"></span></a>LICENCE</h1>
+	
+	<p>Copyright (c) 2014 Genome Research Ltd.</p>
+	
+	<p>Author: Cancer Genome Project <a href="mailto:cgpit@sanger.ac.uk">cgpit@sanger.ac.uk</a></p>
+	
+	<p>This file is part of cgpPindel.</p>
+	
+	<p>cgpPindel is free software: you can redistribute it and/or modify it under
+	  the terms of the GNU Affero General Public License as published by the Free
+	  Software Foundation; either version 3 of the License, or (at your option) any
+	  later version.</p>
+	
+	<p>This program is distributed in the hope that it will be useful, but WITHOUT
+	  ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS
+	  FOR A PARTICULAR PURPOSE. See the GNU Affero General Public License for more
+	  details.</p>
+	
+	<p>You should have received a copy of the GNU Affero General Public License
+	  along with this program. If not, see <a href="http://www.gnu.org/licenses/">http://www.gnu.org/licenses/</a>.</p>
+	
+	<ol>
+	  <li>The usage of a range of years within a copyright statement contained within
+	    this distribution should be interpreted as being equivalent to a list of years
+	    including the first and last year specified and all consecutive years between
+	    them. For example, a copyright statement that reads ‘Copyright (c) 2005, 2007-
+	    2009, 2011-2012’ should be interpreted as being identical to a statement that
+	    reads ‘Copyright (c) 2005, 2007, 2008, 2009, 2011, 2012’ and a copyright
+	    statement that reads ‘Copyright (c) 2005-2012’ should be interpreted as being
+	    identical to a statement that reads ‘Copyright (c) 2005, 2006, 2007, 2008,
+	    2009, 2010, 2011, 2012’.</li>
+	</ol>
       </section>
       <footer>
         <p>Cgppindel maintained by <a href="https://github.com/cancerit">cancerit</a></p>
-        <p><small>Hosted on GitHub Pages &dash; Theme by <a
-href="https://github.com/orderedlist">orderedlist</a>
-              </small></p>
+        <p>
+	  <small>Hosted on GitHub Pages &dash; Theme by <a href="https://github.com/orderedlist">orderedlist</a></small>
+	</p>
       </footer>
     </div>    
   </body>
