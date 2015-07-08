@@ -1,14 +1,9 @@
-window.addEvent("domready",function(){
-	var readmeRequest = new Request({
-		url:"https://github.com/cancerit/cgpPindel/blob/master/README.md",
-    	onSuccess:function(response){
-    		alert("Success");
-    		var converter = new showdown.Converter(),
-    		text = '#hello, markdown!',
-    		html = converter.makeHtml(text);
-			alert(html);
-    	}
-    }).send(); //Don't forget to send our request!
-});
+var xhr = new XMLHttpRequest();
+xhr.open('GET', 'https://api.github.com/repos/cancerit/cgpPindel/readme?ref=master');
+xhr.setRequestHeader("Accept", "application/vnd.github.3.html");
+xhr.setRequestHeader("User-Agent", "CancerIT")
+xhr.send();
 
-
+xhr.onload = function(e){
+    $('#content').replaceWith(xhr.response);
+}
