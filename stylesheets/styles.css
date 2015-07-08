@@ -101,6 +101,8 @@ img {
 
 header {
   width:15%;
+  max-width:360px; 
+  min-width:180px;  
   position:fixed;
   margin-right: 5%;
 }
@@ -163,7 +165,7 @@ header ul a strong {
 section {
   width:70%;
   padding-bottom:50px;
-  margin-left: 30%;
+  margin-left: 35%;
 }
 
 small {
