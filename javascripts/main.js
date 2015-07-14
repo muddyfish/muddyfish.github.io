@@ -34,4 +34,5 @@ window.onload = function () {
     $("a.tar_download_link").attr("href", "https://github.com/cancerit/".concat(current_project, "/tarball/master"));
     $("h1.header").html(current_project);
     $("projectname").html(current_project);
+    document.title = current_project;
 };
